@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+sqlalchemy = "*"
+tabulate = "*"
+joblib = "*"
+dautilpy = {git = "https://github.com/ickc/dautil-py.git", ref = "origin/master"}
+
+[requires]
+python_version = "3.7"
+# pipenv install git+https://github.com/ickc/dautil-py.git@origin/master#egg=dautilpy
