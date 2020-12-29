@@ -228,5 +228,5 @@ cython_debug/
 
 .idea/
 sql/
-
+Pipfile.lock
 
