@@ -2,8 +2,11 @@ from sqlalchemy import create_engine
 from sqlalchemy.engine.url import URL
 import os
 from dotenv import load_dotenv
+from pathlib import Path
 
-load_dotenv()
+if not load_dotenv():
+    envp = Path.cwd().parent / 'database' / '.env'
+    load_dotenv(dotenv_path=envp.as_posix())
 
 POSTGRES_USER = os.environ.get("POSTGRES_USER")
 POSTGRES_NAME = os.environ.get('POSTGRES_NAME')

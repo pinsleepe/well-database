@@ -230,3 +230,6 @@ cython_debug/
 sql/
 Pipfile.lock
 
+raw_data/
+notebooks/
+Pipfile.lock

@@ -5,14 +5,10 @@ verify_ssl = true
 
 [dev-packages]
 python-dotenv = "*"
+ipykernel = "*"
 
 [packages]
 sqlalchemy = "*"
-tabulate = "*"
-joblib = "*"
-dautilpy = {git = "https://github.com/ickc/dautil-py.git", ref = "origin/master"}
-psycopg2 = "*"
 
 [requires]
 python_version = "3.7"
-# pipenv install git+https://github.com/ickc/dautil-py.git@origin/master#egg=dautilpy
